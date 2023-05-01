@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <main>
+        <form action="index.html" method="get"> <!-- el method get es para formularios más informales y post es para formularios con mayor seguridad de datos personales--> <!-- para enviar datos action debe tener una ruta a la pagina a donde se desea redirigir esos datos-->
+            <fieldset> <!-- encuadra el formulario-->
+                <legend>Formulario</legend> 
+                    <div>
+                        <label for="nombre">Escribir Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre"> <!--placeholder texto escrito dentro de la casilla antes de completar-->
+                    </div>
+                    <div>
+                        <label for="apellido">Escribir Apellido:</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                    </div>
+                    <div>
+                        <label for="password">Escribir Contraseña:</label>
+                        <input type="password" name="password id=" password placeholder="Password">
+                    </div>
+                    <div>
+                        <label for="radio">Mujer</label> <!-- Mujer es lo que se ve como opcion en el formulario-->
+                        <input type="radio" name="radio" id="radio"> <!-- radio permite elegir una u otra opcion, no ambas simultaneamente-->
+                    </div>
+                    <div>
+                        <label for="radio">Hombre</label> 
+                        <input type="radio" name="radio" id="radio">
+                    </div>
+                    <div>
+                        <select name="Talle" id="Talle"> <!-- casilla de seleccion-->
+                            <option value="S">Talle S</option>
+                            <option value="M">Talle M</option>
+                            <option value="L">Talle L</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="color"> <!-- casilla para elegir color-->
+                    </div>
+            </fieldset>
+        </form> 
+    </main>
+</body>
+
+</html>
